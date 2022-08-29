@@ -1,0 +1,98 @@
+body {
+    font-family: 'Graphik LCG';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.container {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+img {
+    vertical-align: top;
+    width: 100%;
+    height: auto;
+}
+
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+main {
+    flex-grow: 1;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+    transition: all .8s;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin: 0;
+}
+
+h1 {
+    font-weight: 600;
+    line-height: calc(70/65);
+    font-size: 35px;
+
+    @media (min-width: 992px) {
+        font-size: 40px;
+    }
+
+    @media (min-width: 1400px) {
+        font-size: 55px;
+    }
+
+    @media (min-width: 1400px) {
+        font-size: 65px;
+    }
+}
+
+h2 {
+    font-weight: 600;
+    line-height: calc(60/50);
+    font-size: 35px;
+
+    @media (min-width:768px) {
+        font-size: 40px;
+    }
+
+    @media (min-width:992px) {
+        font-size: 50px;
+    }
+}
+
+h3 {
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 35px;
+}
+
+blockquote {
+    margin: 0;
+}

@@ -1,0 +1,52 @@
+.local__one {
+    background: $local__one;
+}
+
+.local__one__block {
+    padding: 120px 0 140px;
+    text-align: center;
+
+    & a{
+        text-decoration: underline;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+
+.block__local__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 18px;
+    line-height: 25px;
+    margin: 0 -20px;
+
+    .card__local {
+        display: flex;
+        flex-direction: column;
+        width: calc(100% / 3);
+        padding: 75px 20px 0;
+        text-align: center;
+
+        &__photo {
+            height: 120px;
+            display: flex;
+            justify-content: center;
+        }
+
+        &__text {
+            padding-top: 30px;
+
+            &>div {
+                max-width: 325px;
+                margin: 0 auto;
+            }
+
+            p {
+                padding-top: 20px;
+            }
+        }
+    }
+}

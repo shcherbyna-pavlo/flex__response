@@ -1,0 +1,35 @@
+.article {
+    background: $article;
+    font-size: 30px;
+    line-height: 40px;
+    letter-spacing: 0px;
+    padding: 52px 0 105px;
+}
+
+.article__block {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    &__text {
+        padding: 9px 1px 0;
+    }
+}
+
+figcaption {
+    font-family: 'Roboto';
+    font-size: 15px;
+    line-height: 25px;
+    max-width: 275px;
+
+    a {
+        display: inline-block;
+        padding-top: 7px;
+    }
+}
+
+blockquote {
+    margin: 0;
+    padding: 0 70px 23px 0;
+    max-width: 978px;
+}

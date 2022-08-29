@@ -1,0 +1,46 @@
+.local__two {
+    padding: 157px 0 188px;
+}
+
+.local__two__block__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+    align-content: center;
+    padding-top: 75px;
+
+    .card__local {
+        display: flex;
+        flex-direction: column;
+        width: calc(100% / 3);
+        padding: 0 15px;
+        
+        .card__local__photo {
+            height: 201px;
+            display: flex;
+            align-items: center;
+        }
+
+        .card__local__text {
+            padding-top: 50px;
+
+            h3 {
+                font-size: 30px;
+                line-height: 40px;
+            }
+
+            p {
+                padding: 33px 0 25px;
+            }
+        }
+    }
+}
+
+.local__two__block a{
+    text-decoration: underline;
+
+    &:hover {
+        text-decoration: none;
+    }
+}

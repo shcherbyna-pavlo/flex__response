@@ -1,0 +1,57 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?jct2id');
+  src:  url('../fonts/icomoon.eot?jct2id#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?jct2id') format('truetype'),
+    url('../fonts/icomoon.woff?jct2id') format('woff'),
+    url('../fonts/icomoon.svg?jct2id#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-brand_2:before {
+  content: "\e906";
+}
+.icon-brand:before {
+  content: "\e907";
+}
+.icon-Vector_1:before {
+  content: "\e908";
+}
+.icon-logo_l:before {
+  content: "\e90a";
+}
+.icon-frame_6:before {
+  content: "\e900";
+}
+.icon-frame_5:before {
+  content: "\e901";
+}
+.icon-frame_4:before {
+  content: "\e902";
+}
+.icon-frame_3:before {
+  content: "\e903";
+}
+.icon-frame_2:before {
+  content: "\e904";
+}
+.icon-frame_1:before {
+  content: "\e905";
+}

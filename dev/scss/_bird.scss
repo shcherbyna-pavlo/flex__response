@@ -1,0 +1,33 @@
+.bird {
+   padding: 165px 0 162px;
+}
+
+.bird__box {
+   font-size: 25px;
+   line-height: 30px;
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   align-items: center;
+   text-align: center;
+
+   img {
+      margin: 25px 0 32px;
+   }
+
+   &__text {
+      max-width: 730px;
+
+      &>div {
+         max-width: 550px;
+         margin: 0 auto;
+      }
+   }
+}
+
+.h2__2 {
+   font-weight: 600;
+   font-size: 65px;
+   line-height: 75px;
+}
+
