@@ -3,44 +3,88 @@
 }
 
 .m__line__card {
-    display: flex;
-    flex-direction: column;
-    padding: 90px 0 150px;
+    padding: 20px 0 50px;
+
+    @media (min-width:768px) {
+        display: flex;
+        flex-direction: column;
+        padding: 35px 0 70px;
+    }
+
+    @media (min-width:992px) {
+        padding: 50px 0 100px;
+    }
+
+    @media (min-width:1200px) {
+        padding: 90px 0 150px;
+    }
 
     &__block {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: space-between;
-        padding-bottom: 250px;
-        margin: 0 -20px;
 
-        &:nth-child(2n) {
-            flex-direction: row-reverse;
+        @media (min-width:768px) {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            padding-bottom: 70px;
+            margin: 0 -20px;
+    
+            &:nth-child(2n) {
+                flex-direction: row-reverse;
+            }
+
+            &:last-child {
+                padding: 0;
+            }
         }
 
-        &:last-child {
-            padding: 0;
+        @media (min-width:992px) {
+            padding-bottom: 120px;
+        }
+
+        @media (min-width:1200px) {
+            padding-bottom: 170px;
+        }
+
+        @media (min-width:1400px) {
+            padding-bottom: 250px;
         }
     }
 
     .text {
-        padding: 0 20px;
-        flex-grow: 1;
-        max-width: 560px;
+        width: 100%;
+        padding: 40px 0 0 0;
+
+        @media (min-width:768px) {
+            padding: 0 20px;
+            flex-grow: 1;
+            width: 50%;
+        }
     }
 
     .card {
-        padding: 0 20px;
+        max-width: 376px;
+        padding: 10px 0 0 0;
+        margin: 0 auto;
+
+        @media (min-width:768px) {
+            padding: 0 20px;
+            max-width: calc(50% - 13px);
+            margin: 0;
+        }
     }
 
     p {
-        padding: 30px 0 30px;
-        
+        padding: 15px 0;
+
+        @media (min-width:768px) {
+            padding: 30px 0 30px;
+        }
+
         & a {
             text-decoration: underline;
-    
+
             &:hover {
                 text-decoration: none;
             }
