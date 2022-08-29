@@ -1,14 +1,32 @@
 .f__line__top {
-   display: flex;
-   flex-direction: row;
-   padding: 90px 0 95px;
-   border-bottom: 1px solid #000;
+   padding: 35px 0;
+
+   @media (min-width:768px) {
+      
+   }
+   @media (min-width:992px) {
+      
+   }
+   @media (min-width:1200px) {
+      display: flex;
+      padding: 90px 0 95px;
+      flex-direction: row;
+      border-bottom: 1px solid #000;
+   }
 }
 
 .race {
    display: flex;
-   flex-direction: column;
+   flex-direction: row;
    max-width: 300px;
+   
+   @media (min-width:768px) {
+      flex-direction: column;
+   }
+
+   .div {
+      width: 50%;
+   }
 
    h3 {
       font-weight: 600;
@@ -27,11 +45,14 @@
 .f__menu {
    display: flex;
    flex-direction: row;
-   flex-wrap: wrap;
-   flex-grow: 1;
-   padding-left: 140px;
-   justify-content: space-between;
-   margin: 0 -16px;
+
+   @media (min-width:1200px) {
+      flex-wrap: wrap;
+      flex-grow: 1;
+      padding-left: 140px;
+      justify-content: space-between;
+      margin: 0 -16px;
+   }
 
    &__list {
       width: calc(100% / 4);

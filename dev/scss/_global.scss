@@ -7,7 +7,6 @@ body {
     @media (min-width:768px) {
         font-size: 20px;
     }
-
 }
 
 .container {
@@ -18,7 +17,7 @@ body {
 
 img {
     vertical-align: top;
-    width: 100%;
+    max-width: 100%;
     height: auto;
 }
 

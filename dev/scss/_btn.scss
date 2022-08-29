@@ -58,8 +58,13 @@
 }
 
 .btn__bird {
-    width: 193px;
-    line-height: 60px;
+    line-height: 45px;
+    width: 190px;
+
+    @media (min-width:768) {
+        width: 193px;
+        line-height: 60px;
+    }
 }
 
 .btn__black {

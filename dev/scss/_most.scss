@@ -14,12 +14,32 @@
     @media (min-width:1400px) {
         padding: 82px 0 83px;
     }
+
+    &__photo {
+        width: 25%;
+        margin: 0 auto;
+
+        @media (min-width:550px) {
+            margin: 0;
+        }
+
+        @media (min-width:992px) {
+            width: 18%;
+        }
+
+        @media (min-width:992px) {
+            width: auto;
+        }
+    }
 }
 
 .most__block {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+
+    @media (min-width:550px) {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
     
     @media (min-width:992px) {
         flex-wrap: nowrap;
@@ -31,12 +51,22 @@
     }
 
     &__text {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: center;
-        width: calc(50% + 9px);
-        padding: 7px 25px 7px 0;
+        width: 100%;
+        text-align: center;
+        padding: 15px;
+        
+        @media (min-width:550px) {
+            display: flex;
+            flex-direction: row;
+            width: 75%;
+            align-items: center;
+            padding: 7px 25px 7px 10px;
+            text-align: start;
+        }
+        
+        @media (min-width:992px) {
+            width: calc(50% + 9px);
+        }
 
         @media (min-width:1200px) {
             padding: 7px 40px 7px 0;
@@ -48,16 +78,14 @@
         }
 
         h3 {
-            font-size: 15px;
-            line-height: calc(50/35);
-            padding-left: 15px;
-            
-            @media (min-width:768px) {
-                font-size: 20px;
-            }
-            
-            @media (min-width:992px) {
+            font-size: 20px;
+
+            @media (min-width:550px) {
+                line-height: calc(50/35);
                 font-size: 25px;
+            }
+
+            @media (min-width:992px) {
                 padding-left: 30px;
             }
 
@@ -65,7 +93,6 @@
                 font-size: 35px;
                 padding-left: 68px;
             }
-
         }
     }
 
@@ -89,9 +116,13 @@
         }
 
         p {
-            font-size: 15px;
-            line-height: 25px;
+            font-size: 12px;
+            line-height: calc(25/15);
             letter-spacing: 0.75px;
+            
+            @media (min-width:768px) {
+                font-size: 15px;
+            }
         }
     }
 }
@@ -132,6 +163,11 @@
 }
 
 [class="icon-Vector_1"] {
-    font-size: 19px;
+    font-size: 15px;
     padding: 0 3px;
+
+    @media (min-width:550px) {
+        font-size: 19px;
+
+    }
 }
