@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
@@ -431,11 +435,11 @@
                     <div class="race">
                         <div>
                             <h3>Case Studies</h3>
-                            <div>
+                            <div class="race__img">
                                 <img src="images/race.png" alt="race">
                             </div>
                         </div>
-                        <div>
+                        <div class="race__text">
                             <div class="f__brand">
                                 <a href="#"><img src="images/l2_brand_1.png" alt="specialized"></a>
                             </div>
@@ -443,62 +447,80 @@
                             <a href="#" class="hov">Read more</a>
                         </div>
                     </div>
-                    <div class="f__menu">
-                        <div class="f__menu__list">
-                            <h4>Product</h4>
-                            <nav>
-                                <ul>
-                                    <li><a href="#">For developers</a></li>
-                                    <li><a href="#">For managers</a></li>
-                                    <li><a href="#">For translators</a></li>
-                                    <li><a href="#">For designers</a></li>
-                                    <li><a href="#">Integrations</a></li>
-                                    <li><a href="#">Security</a></li>
-                                    <li><a href="#">Pricing</a></li>
-                                    <li><a href="#">Automations</a></li>
-                                </ul>
-                            </nav>
+                    <div thumbsSlider="" class="swiper mySwiper2">
+                        <div class="f__menu swiper-wrapper">
+                            <div class="f__menu__list swiper-slide">
+                                <h4>Product</h4>
+                            </div>
+                            <div class="f__menu__list swiper-slide">
+                                <h4>Support</h4>
+                            </div>
+                            <div class="f__menu__list swiper-slide">
+                                <h4>Company</h4>
+                            </div>
+                            <div class="f__menu__list swiper-slide">
+                                <h4>Legal</h4>
+                            </div>
                         </div>
-                        <div class="f__menu__list">
-                            <h4>Support</h4>
-                            <nav>
-                                <ul>
-                                    <li><a href="#">Contact</a></li>
-                                    <li><a href="#">Documentation</a></li>
-                                    <li><a href="#">Status</a></li>
-                                    <li><a href="#">Product Updates</a></li>
-                                    <li><a href="#">CLI Tool</a></li>
-                                    <li><a href="#">API Reference</a></li>
-                                    <li><a href="#">iOS and Android SDK</a></li>
-                                    <li><a href="#">Supported File Formats</a></li>
-                                </ul>
-                            </nav>
-                        </div>
-                        <div class="f__menu__list">
-                            <h4>Company</h4>
-                            <nav>
-                                <ul>
-                                    <li><a href="#">About</a></li>
-                                    <li><a href="#">Blog</a></li>
-                                    <li><a href="#">Careers | We`re Hiring</a></li>
-                                    <li><a href="#">Case Studies</a></li>
-                                    <li><a href="#">Media Kit</a></li>
-                                </ul>
-                            </nav>
-                        </div>
-                        <div class="f__menu__list">
-                            <h4>Legal</h4>
-                            <nav>
-                                <ul>
-                                    <li><a href="#">Terms of Service</a></li>
-                                    <li><a href="#">Privacy Policy</a></li>
-                                    <li><a href="#">Cookie Policy</a></li>
-                                    <li><a href="#">Privacy Shield</a></li>
-                                    <li><a href="#">DPA</a></li>
-                                    <li><a href="#">List of Sub-processors</a></li>
-                                    <li><a href="#">Candidates Privacy Notice</a></li>
-                                </ul>
-                            </nav>
+                    </div>
+                    <div class="swiper mySwiper">
+                        <div class="f__menu swiper-wrapper">
+                            <div class="f__menu__list swiper-slide">
+                                <h4>Product</h4>
+                                <nav>
+                                    <ul>
+                                        <li><a href="#">For developers</a></li>
+                                        <li><a href="#">For managers</a></li>
+                                        <li><a href="#">For translators</a></li>
+                                        <li><a href="#">For designers</a></li>
+                                        <li><a href="#">Integrations</a></li>
+                                        <li><a href="#">Security</a></li>
+                                        <li><a href="#">Pricing</a></li>
+                                        <li><a href="#">Automations</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="f__menu__list swiper-slide">
+                                <h4>Support</h4>
+                                <nav>
+                                    <ul>
+                                        <li><a href="#">Contact</a></li>
+                                        <li><a href="#">Documentation</a></li>
+                                        <li><a href="#">Status</a></li>
+                                        <li><a href="#">Product Updates</a></li>
+                                        <li><a href="#">CLI Tool</a></li>
+                                        <li><a href="#">API Reference</a></li>
+                                        <li><a href="#">iOS and Android SDK</a></li>
+                                        <li><a href="#">Supported File Formats</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="f__menu__list swiper-slide">
+                                <h4>Company</h4>
+                                <nav>
+                                    <ul>
+                                        <li><a href="#">About</a></li>
+                                        <li><a href="#">Blog</a></li>
+                                        <li><a href="#">Careers | We`re Hiring</a></li>
+                                        <li><a href="#">Case Studies</a></li>
+                                        <li><a href="#">Media Kit</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="f__menu__list swiper-slide">
+                                <h4>Legal</h4>
+                                <nav>
+                                    <ul>
+                                        <li><a href="#">Terms of Service</a></li>
+                                        <li><a href="#">Privacy Policy</a></li>
+                                        <li><a href="#">Cookie Policy</a></li>
+                                        <li><a href="#">Privacy Shield</a></li>
+                                        <li><a href="#">DPA</a></li>
+                                        <li><a href="#">List of Sub-processors</a></li>
+                                        <li><a href="#">Candidates Privacy Notice</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -517,6 +539,27 @@
             </div>
         </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper2", {
+          spaceBetween: 10,
+          slidesPerView: 4,
+          freeMode: true,
+          watchSlidesProgress: true,
+        });
+        var swiper2 = new Swiper(".mySwiper", {
+        //   spaceBetween: 10,
+        effect: "cards",
+        grabCursor: true,
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          thumbs: {
+            swiper: swiper,
+          },
+        });
+      </script>
 </body>
 
 </html>
