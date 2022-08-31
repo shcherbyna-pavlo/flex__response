@@ -6,7 +6,6 @@
     @media (min-width:768px) {
         display: flex;
         align-items: center;
-        // flex-wrap: wrap;
         flex-direction: row-reverse;
     }
 
@@ -35,7 +34,7 @@
             padding: 25px 0;
             font-size: 20px;
             line-height: calc(35/25);
-            
+
             @media (min-width:992px) {
                 max-width: 471px;
                 padding: 51px 0 48px 0;
@@ -50,7 +49,6 @@
             line-height: 25px;
             padding-top: 25px;
         }
-    
     }
 
     &__img {

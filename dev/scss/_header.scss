@@ -1,46 +1,119 @@
-
 #header {
-    border-bottom: 1px solid #E5E5E5;
+    border-bottom: 1px solid $header-bord;
+    position: relative;
+
+    .hea__con {
+        max-width: 1480px;
+
+        &:after {
+            @media (max-width:991px) {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: $header-after-bg;
+            }
+        }
+    }
 }
+
 .hea__container {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
-    margin: 0 auto;
-    max-width: 1480px;
-    padding: 0 20px;
+    padding: 25px 15px;
+
+    @media (min-width:992px) {
+        margin: 0 auto;
+        max-width: 1480px;
+        padding: 0 20px;
+        justify-content: none;
+    }
 }
 
 .hea__logo {
-    padding: 34px 0px 31px 31px;
-    display: flex;
-    flex-wrap: wrap;
+    position: relative;
+    padding: 0 0 0 20px;
+    z-index: 2;
 
+    @media (min-width:992px) {
+        padding: 34px 0px 31px 31px;
+    }
 }
 
 .hea__block-menu {
-    display: flex;
-    align-items: center;
-    flex-grow: 1;
-    justify-content: space-between;
+    position: absolute;
+    top: -1000px;
+    left: 0;
+    right: 0;
+    background: $hea__block-bg;
+    padding: 15px;
+    transition: top .8s;
+
+    @media (min-width:992px) {
+        position: static;
+        display: flex;
+        align-items: center;
+        flex-grow: 1;
+        justify-content: space-between;
+        background: none;
+    }
+
+    .btn__groop {
+
+        @media (max-width:991px) {
+            padding: 0;
+
+            >li {
+                width: 50%;
+            }
+        }
+    }
+
+    .btn {
+        width: 100%;
+
+        @media (min-width:992px) {
+            width: 120px;
+        }
+    }
 }
 
 .menu {
-    display: flex;
-    flex-wrap: wrap;
-    flex-grow: 1;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 15px;
-    line-height: 20px;
-    padding-left: 51px;
-    
+    max-width: 900px;
+    line-height: calc(20/15);
+    font-size: 20px;
+    text-align: center;
+
+    @media (min-width:992px) {
+        display: flex;
+        flex-grow: 1;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 15px;
+        padding-left: 15px;
+
+        @media (min-width:992px) {
+            padding-left: 51px;
+        }
+    }
+
     >li {
-        padding-right: 55px;
+        padding-right: 15px;
+
+        @media (min-width:992px) {
+            padding-right: 25px;
+        }
+
+        @media (min-width:1200px) {
+            padding-right: 55px;
+        }
 
         a {
             position: relative;
-            
+
             &:before {
                 content: '';
                 position: absolute;
@@ -50,7 +123,7 @@
                 height: 2px;
                 transition: all .8s;
             }
-    
+
             &:hover:before {
                 content: '';
                 position: absolute;
@@ -61,5 +134,77 @@
                 background: $btn__org;
             }
         }
+    }
+}
+
+#drop {
+    display: none;
+}
+
+#drop:checked {
+    ~ .hea__block-menu {
+
+        @media (max-width:991px) {
+            top: 100%;
+        }
+    }
+
+    + .drop {
+        span {
+            opacity: 0;
+        }
+
+        &:after {
+            top: 50%;
+            transform: translateY(-50%) rotate(45deg);
+            background: $drop-check-bg;
+        }
+        &:before{
+            top: 50%;
+            transform: translateY(-50%) rotate(-45deg);
+            background: $drop-check-bg;
+        }
+    }
+}
+
+.drop {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #000;
+    position: relative;
+    z-index: 2;
+
+    @media (min-width:992px) {
+        display: none;
+    }
+
+    &:after,
+    &:before,
+    span {
+        content: '';
+        position: absolute;
+        left: 5px;
+        right: 5px;
+        display: block;
+        font-size: 0;
+        line-height: 0;
+        height: 2px;
+        background: $drop-bg;
+        transition: all .8s;
+    }
+
+    &:after {
+        top: 6px;
+    }
+
+    &:before {
+        top: 30px;
+    }
+
+    span {
+        top: 50%;
+        transform: translateY(-50%);
     }
 }

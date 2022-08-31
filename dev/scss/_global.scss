@@ -35,7 +35,7 @@ main {
 }
 
 a {
-    color: #000;
+    color: $link-color;
     text-decoration: none;
     transition: all .8s;
 }

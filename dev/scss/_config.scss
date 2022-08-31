@@ -6,13 +6,57 @@ $goldenrod: #DABC98;
 $blue-white: #C9E8F2;
 $beige: #FFF8E4;
 $orang: #FF9C7D;
+$greey: #E5E5E5;
+$green: #98a44a;
 
-//background//
-$btn__org: $dark-orange;
-$btn__wht: $white;
-$btn__b: $black;
-$most: $goldenrod;
-$article: $blue-white;
-$local__one: $beige;
+//btn//
+$btn__org-bg: $dark-orange;
+$btn__org-bord: $dark-orange;
+$btn__org-color--hov: $black;
+$btn__org-bord--hov: $black;
+
+$btn__wht-bg: $white;
+$btn__wht-bord: $black;
+$btn__wht-color--hov: $white;
+$btn__wht-bord--hov: $dark-orange;
+
+$btn__b-bg: $black;
+$btn__b-color: $white;
+$btn__b-bord: $black;
+$btn__b-color--hov: $black;
+$btn__b-bord--hov: $black;
+
+//global//
+$link-color: $black;
+
+//header//
+$header-bord: $greey;
+$header-after-bg:$white;
+$hea__block-bg:$blue-white;
+$drop-bg:$green;
+$drop-check-bg:$dark-orange;
+
+//m__line2//
 $m__line2: $orang;
-$why: $orang;
+
+//local__one//
+$local__one-bg: $beige;
+
+//article//
+$article-bg: $blue-white;
+
+//most//
+$most-bg: $goldenrod;
+$brand-bord: $black;
+
+//why//
+$why-bg: $orang;
+
+//footer//
+$foot-bord: $black;
+$slide-1n: $orang;
+$slide-2n: $goldenrod;
+$slide-3n: $blue-white;
+$slide-4n: $beige;
+
+

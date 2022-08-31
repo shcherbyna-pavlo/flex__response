@@ -1,5 +1,5 @@
 .article {
-    background: $article;
+    background: $article-bg;
     font-size: 20px;
     line-height: calc(40/30);
     letter-spacing: 0px;
@@ -17,7 +17,6 @@
     @media (min-width:1200px) {
         padding: 52px 0 105px;
     }
-
 }
 
 .article__block {

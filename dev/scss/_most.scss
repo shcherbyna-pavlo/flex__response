@@ -1,8 +1,8 @@
 .most {
     max-width: 100%;
-    background: $most;
+    background: $most-bg;
     padding: 10px 0;
-    
+
     @media (min-width:768px) {
         padding: 30px 0;
     }
@@ -10,7 +10,7 @@
     @media (min-width:1200px) {
         padding: 50px 0;
     }
-    
+
     @media (min-width:1400px) {
         padding: 82px 0 83px;
     }
@@ -40,7 +40,7 @@
         flex-direction: row;
         flex-wrap: wrap;
     }
-    
+
     @media (min-width:992px) {
         flex-wrap: nowrap;
     }
@@ -54,7 +54,7 @@
         width: 100%;
         text-align: center;
         padding: 15px;
-        
+
         @media (min-width:550px) {
             display: flex;
             flex-direction: row;
@@ -63,14 +63,13 @@
             padding: 7px 25px 7px 10px;
             text-align: start;
         }
-        
+
         @media (min-width:992px) {
             width: calc(50% + 9px);
         }
 
         @media (min-width:1200px) {
             padding: 7px 40px 7px 0;
-
         }
 
         @media (min-width:1400px) {
@@ -98,18 +97,18 @@
 
     &__brand {
         display: flex;
-        border-top: 1px solid #000;
+        border-top: 1px solid $brand-bord;
         justify-content: space-evenly;
         padding: 24px 0;
         margin: 15px 0;
         width: 100%;
-        
+
         @media (min-width:992px) {
             flex-direction: row;
             align-items: center;
             justify-items: end;
             justify-content: none;
-            border-left: 1px solid #000;
+            border-left: 1px solid $brand-bord;
             border-top: transparent;
             margin: 0;
             width: auto;
@@ -119,7 +118,7 @@
             font-size: 12px;
             line-height: calc(25/15);
             letter-spacing: 0.75px;
-            
+
             @media (min-width:768px) {
                 font-size: 15px;
             }
@@ -149,7 +148,6 @@
         padding-left: 71px;
     }
 
-
     >span {
         font-size: 36px;
     }
@@ -168,6 +166,5 @@
 
     @media (min-width:550px) {
         font-size: 19px;
-
     }
 }

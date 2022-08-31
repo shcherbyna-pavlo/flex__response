@@ -25,25 +25,25 @@
 
 .btn__org {
     color: #fff;
-    background: $btn__org;
-    border: 1px solid #FF6336;
+    background: $btn__org-bg;
+    border: 1px solid $btn__org-bord;
     
 
     &:hover {
-        color: #000;
-        background: $btn__wht;
-        border: 1px solid #000;
+        color: $btn__org-color--hov;
+        background: $btn__wht-bg;
+        border: 1px solid $btn__org-bord--hov;
     }
 }
 
 .btn__wht {
-    background: $btn__wht;
-    border: 1px solid #000;
+    background: $btn__wht-bg;
+    border: 1px solid $btn__wht-bord;
 
     &:hover {
-        color: #fff;
-        background: $btn__org;
-        border: 1px solid #FF6336;
+        color: $btn__wht-color--hov;
+        background: $btn__org-bg;
+        border: 1px solid $btn__wht-bord--hov;
     }
 }
 
@@ -68,15 +68,15 @@
 }
 
 .btn__black {
-    color: #fff;
+    color: $btn__b-color;
     font-size: 17px;
-    background: $btn__b;
-    border: 1px solid #000;
+    background: $btn__b-bg;
+    border: 1px solid $btn__b-bord;
 
     &:hover {
-        color: #000;
+        color: $btn__b-color--hov;
         background: $btn__wht;
-        border: 1px solid #000;
+        border: 1px solid $btn__b-bord--hov;
     }
 }
 
@@ -92,7 +92,7 @@
         top: 0;
         height: 100%;
         width: 0;
-        background: $btn__org;
+        background: $btn__org-bg;
         transition: all .8s;
     }
 
@@ -103,7 +103,7 @@
         top: 0;
         height: 100%;
         width: 100%;
-        background: $btn__org;
+        background: $btn__org-bg;
         z-index: 2;
         opacity: .5;
     }
